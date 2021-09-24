@@ -1,10 +1,6 @@
 export const DataUser = {
   name: "Arif Nur Rohman",
   position: "junior Frontend Web Developer",
-  briefDescription:
-    "I am a web developer and frontend web developer who focuses on implementing web design into a responsive web. I'm looking forward to collaborating with you.",
-  selfDescriptions:
-    "I am a web developer, and I'm very passionate and dedicated to my work. With experience in creating multiple projects as a web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoyed every step of the development process, from discussion and collaboration.",
   imageHome: "/img/profile.png",
   imageAbout: "/img/about.png",
 };

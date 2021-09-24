@@ -46,15 +46,7 @@ import {
 } from "@iconscout/react-unicons";
 import ImageSvg from "./ImageSvg";
 
-import Swiper from "swiper/bundle";
-import "swiper/css/bundle";
-
 export default function Home(props) {
-  // const swiper = new Swiper(".swiper", {
-  //   slidesPerView: 6,
-  //   spaceBetween: 20,
-  //   loop: true,
-  // });
   return (
     <>
       <Container>

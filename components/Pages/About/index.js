@@ -1,8 +1,6 @@
 import { React, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import AboutImg from "../../../public/img/about.png";
-import Graduate from "../../../public/img/graduate.svg";
 import { Container } from "../../Theme/GlobalStyle";
 import {
   AboutCol,
@@ -14,7 +12,6 @@ import {
   CourseDate,
   CourseCard,
   Course,
-  CourseView,
   CourseCredential,
   Education,
   ItemDesc,
@@ -31,11 +28,10 @@ import {
   EducationCard,
   EducationTitle,
   EducationSubtitle,
-  EducationDesc,
   EducationDate,
 } from "./Styles";
 
-import { DataCourses, DataEducations } from "../../../Data/data";
+import { DataCourses, DataEducations, DataUser } from "../../../Data/data";
 import { UilGraduationCap, UilArrowRight } from "@iconscout/react-unicons";
 export default function About(props) {
   const [education, setEducation] = useState(true);
@@ -50,38 +46,37 @@ export default function About(props) {
           <AboutRow>
             <AboutCol>
               <ItemImg>
-                <Image src={AboutImg} />
+                <Image
+                  src={DataUser.imageAbout}
+                  width={540}
+                  height={426}
+                  placeholder="blur"
+                  blurDataURL={`${DataUser.imageAbout}?width=${parseInt(
+                    (1448 * 1) / 100
+                  )}&height=${parseInt((908 * 1) / 100)}`}
+                />
               </ItemImg>
             </AboutCol>
             <AboutCol>
               <ItemDesc>
-                {/* I'm a web developer, and I'm very passionate and dedicated to my
-                work. With experience in creating multiple projects as a web
-                developer, I have acquired the skills and knowledge necessary to
-                make your project a success. I enjoyed every step of the
-                development process, from discussion and collaboration. */}
-                <p>
-                  Hello! My name is Arif Nur Rohman. I was interested in
-                  technology when I entered high school. At the time I was
-                  majoring in <strong>Software engineering</strong> and one of
-                  them learned a lot about the basics of programming. In 2017, I
-                  went on to study and took an <strong>informatics</strong>{" "}
-                  study program. During my studies, I began to explore web
-                  development by using several programming language
-                  technologies. Off-campus I also took some online course to
-                  improve and develop my skills in technology. In 2021, I
-                  graduated college with a computer bachelor's degree and earned
-                  a GPA of 3.86.
-                </p>
+                Hello! My name is Arif Nur Rohman. I was interested in
+                technology when I entered high school. At the time I was
+                majoring in <strong>Software engineering</strong> and one of
+                them learned a lot about the basics of programming. In 2017, I
+                went on to study and took an <strong>informatics</strong> study
+                program. During my studies, I began to explore web development
+                by using several programming language technologies. Off-campus I
+                also took some online course to improve and develop my skills in
+                technology. In 2021, I graduated college with a computer
+                bachelor's degree and earned a GPA of 3.86.
                 <br />
-                <p>
-                  After graduation I decided to become a{" "}
-                  <strong>Frontend Web Developer</strong>. With experience in
-                  creating multiple projects as a web developer, I have acquired
-                  the skills and knowledge necessary to create a good project. I
-                  am very excited and enjoy every project development process,
-                  and enjoy discussing and collaborating.
-                </p>
+                <br />
+                After graduation I decided to become a{" "}
+                <strong>Frontend Web Developer</strong>. With experience in
+                creating multiple projects as a web developer, I have acquired
+                the skills and knowledge necessary to create a good project. I
+                am very excited and enjoy every project development process, and
+                enjoy discussing and collaborating.
               </ItemDesc>
             </AboutCol>
           </AboutRow>
