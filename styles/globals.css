@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+strong {
+  color: #079211;
+}
