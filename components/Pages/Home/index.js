@@ -118,7 +118,15 @@ export default function Home(props) {
           {DataProjects.map((project, index) => (
             <ProjectCol key={index}>
               <ProjectImg>
-                <Image src={project.imageDisplay} width={1448} height={908} />
+                <Image
+                  src={project.imageDisplay}
+                  width={1448}
+                  height={908}
+                  placeholder="blur"
+                  blurDataURL={`${project.imageDisplay}?width=${parseInt(
+                    (1448 * 1) / 100
+                  )}&height=${parseInt((908 * 1) / 100)}`}
+                />
               </ProjectImg>
               <ProjectContent>
                 <ProjectTitle>
@@ -175,7 +183,15 @@ export default function Home(props) {
         <Skills>
           {DataSkills.map((skill, index) => (
             <SkillsSlide key={index}>
-              <Image src={skill} width={480} height={480} />
+              <Image
+                src={skill}
+                width={480}
+                height={480}
+                placeholder="blur"
+                blurDataURL={`${skill}?width=${parseInt(
+                  (480 * 1) / 100
+                )}&height=${parseInt((480 * 1) / 100)}`}
+              />
             </SkillsSlide>
           ))}
         </Skills>

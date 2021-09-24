@@ -156,7 +156,7 @@ export const DataProjects = [
     textSource: "Source Code",
     textLink: "Visit Website",
     linkSite: "http://arifnurrohman.xyz",
-    linkGithub: "#",
+    linkGithub: "https://github.com/arifnurrhmnn/my-web-portfolio",
     tags: [
       "react.js",
       "next.js",

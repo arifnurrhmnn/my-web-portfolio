@@ -36,6 +36,10 @@ export default function Project(props) {
                     src={project.imageDisplay}
                     width={362}
                     height={227}
+                    placeholder="blur"
+                    blurDataURL={`${project.imageDisplay}?width=${parseInt(
+                      (362 * 1) / 100
+                    )}&height=${parseInt((227 * 1) / 100)}`}
                     layout="responsive"
                   />
                 </ItemImg>
@@ -49,13 +53,13 @@ export default function Project(props) {
                             size="14"
                             style={{ marginRight: "4px" }}
                           />
-                          Source Code
+                          {project.textSource}
                         </ItemLink>
                       </Link>
                       <Link href={project.linkSite} passHref>
                         <ItemLink target="_blank">
                           <UilLink size="14" style={{ marginRight: "4px" }} />
-                          Visit Website
+                          {project.textLink}
                         </ItemLink>
                       </Link>
                     </ItemSubtitle>
