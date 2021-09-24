@@ -1,23 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import { Container } from "../../Theme/GlobalStyle";
+import { UilMessage } from "@iconscout/react-unicons";
 import {
   ContactMe,
   ContactTitle,
   ContactDesc,
   ContactLink,
   ContactButton,
-  MediaSocial,
-  SocialLinks,
-  // size,
 } from "./Styles";
-
-import {
-  UilMessage,
-  UilWhatsapp,
-  UilInstagram,
-  UilFacebookF,
-} from "@iconscout/react-unicons";
 
 export default function Contact() {
   return (
@@ -34,10 +25,10 @@ export default function Contact() {
           </ContactDesc>
           <Link href="mailto:arifnur.rhmnn@gmail.com" passHref>
             <ContactLink>
-            <ContactButton target="_blank">
-              <UilMessage size="16" />
-              Get In Touch
-            </ContactButton>
+              <ContactButton target="_blank">
+                <UilMessage size="16" />
+                Get In Touch
+              </ContactButton>
             </ContactLink>
           </Link>
         </ContactMe>

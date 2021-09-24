@@ -2,6 +2,8 @@ import { React, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "../../Theme/GlobalStyle";
+import { DataCourses, DataEducations, DataUser } from "../../../Data/data";
+import { UilGraduationCap, UilArrowRight } from "@iconscout/react-unicons";
 import {
   AboutCol,
   AboutRow,
@@ -31,12 +33,10 @@ import {
   EducationDate,
 } from "./Styles";
 
-import { DataCourses, DataEducations, DataUser } from "../../../Data/data";
-import { UilGraduationCap, UilArrowRight } from "@iconscout/react-unicons";
 export default function About(props) {
   const [education, setEducation] = useState(true);
   const [course, setCourse] = useState(false);
-  const [show, setShow] = useState(true);
+
   return (
     <>
       <Container>
@@ -52,8 +52,8 @@ export default function About(props) {
                   height={426}
                   placeholder="blur"
                   blurDataURL={`${DataUser.imageAbout}?width=${parseInt(
-                    (1448 * 1) / 100
-                  )}&height=${parseInt((908 * 1) / 100)}`}
+                    (540 * 1) / 100
+                  )}&height=${parseInt((426 * 1) / 100)}`}
                 />
               </ItemImg>
             </AboutCol>

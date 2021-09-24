@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { InfoSec, Container } from "../../Theme/GlobalStyle";
+import { Container } from "../../Theme/GlobalStyle";
 import { DataProjects, DataSkills } from "../../../Data/data";
 import {
   DownloadCv,

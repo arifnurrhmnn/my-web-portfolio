@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import Navbar from "../../Navbar";
 import { GlobalStyle } from "../../Theme";
 import Footer from "../Footer";
 
+import Header from "../Header";
 export default function Layout(props) {
   return (
     <>
@@ -11,7 +11,7 @@ export default function Layout(props) {
         <title>{props.title}</title>
       </Head>
       <GlobalStyle />
-      <Navbar />
+      <Header />
       {props.children}
       <Footer />
     </>
