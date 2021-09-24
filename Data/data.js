@@ -36,19 +36,19 @@ export const DataMediaSocials = [
 export const DataEducations = [
   {
     id: 1,
-    name: "SMK Negeri 5 Surakarta",
-    fieldOfStudy: "Software Engineering",
-    yearStarts: "2015",
-    yearFinised: "2017",
+    name: "Universitas AMIKOM Yogyakarta",
+    fieldOfStudy: "Bachelor of Informatics",
+    yearStarts: "2017",
+    yearFinised: "2021",
     description:
       "I graduated from informatics at Universitas Amikom Yogyakarta in 2021 by obtaining a GPA of 3.86.",
   },
   {
     id: 2,
-    name: "Universitas AMIKOM Yogyakarta",
-    fieldOfStudy: "Bachelor of Informatics",
-    yearStarts: "2017",
-    yearFinised: "2021",
+    name: "SMK Negeri 5 Surakarta",
+    fieldOfStudy: "Software Engineering",
+    yearStarts: "2015",
+    yearFinised: "2017",
     description:
       "I graduated from informatics at Universitas Amikom Yogyakarta in 2021 by obtaining a GPA of 3.86.",
   },

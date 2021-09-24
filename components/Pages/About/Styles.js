@@ -117,7 +117,7 @@ export const QualificationContent = styled.div`
 export const Education = styled.div`
   display: ${(props) => (props.education ? "flex" : "none")};
   flex-wrap: wrap;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
   gap: 1.5rem;
   text-align: center;
