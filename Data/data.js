@@ -169,7 +169,7 @@ export const DataProjects = [
     textSource: "Source Code",
     textLink: "Coming Soon",
     linkSite: "#",
-    linkGithub: "#",
+    linkGithub: "https://github.com/arifnurrhmnn/batikkita",
     tags: [
       "django",
       "python",
