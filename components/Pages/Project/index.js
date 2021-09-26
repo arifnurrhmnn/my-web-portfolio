@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { DataProjects } from "../../../Data/data";
@@ -22,6 +22,8 @@ import {
 } from "./Styles";
 
 export default function Project(props) {
+  const [disabled, setDisabled] = useState();
+
   return (
     <>
       <Container>
@@ -48,7 +50,10 @@ export default function Project(props) {
                     <ItemTitle>{project.name}</ItemTitle>
                     <ItemSubtitle>
                       <Link href={project.linkGithub} passHref>
-                        <ItemLink target="_blank">
+                        <ItemLink
+                          target="_blank"
+                          disabled={project.linkGithub === "" ? true : false}
+                        >
                           <UilGithubAlt
                             size="14"
                             style={{ marginRight: "4px" }}
@@ -57,7 +62,10 @@ export default function Project(props) {
                         </ItemLink>
                       </Link>
                       <Link href={project.linkSite} passHref>
-                        <ItemLink target="_blank">
+                        <ItemLink
+                          target="_blank"
+                          disabled={project.linkSite === "" ? true : false}
+                        >
                           <UilLink size="14" style={{ marginRight: "4px" }} />
                           {project.textLink}
                         </ItemLink>

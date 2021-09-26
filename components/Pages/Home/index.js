@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "../../Theme/GlobalStyle";
 import { DataProjects, DataSkills } from "../../../Data/data";
+import ImageSvg from "./ImageSvg";
 import {
   DownloadCv,
   ImgWrapper,
@@ -44,9 +45,10 @@ import {
   UilFileAlt,
   UilDownloadAlt,
 } from "@iconscout/react-unicons";
-import ImageSvg from "./ImageSvg";
 
 export default function Home(props) {
+  const [disabled, setDisabled] = useState();
+
   return (
     <>
       <Container>
@@ -123,13 +125,19 @@ export default function Home(props) {
               <ProjectContent>
                 <ProjectTitle>
                   <Link href={project.linkGithub} passHref>
-                    <ProjectLink target="_blank">
+                    <ProjectLink
+                      target="_blank"
+                      disabled={project.linkGithub === "" ? true : false}
+                    >
                       <UilGithubAlt size="14" style={{ marginRight: "4px" }} />
                       {project.textSource}
                     </ProjectLink>
                   </Link>
                   <Link href={project.linkSite} passHref>
-                    <ProjectLink target="_blank">
+                    <ProjectLink
+                      target="_blank"
+                      disabled={project.linkSite === "" ? true : false}
+                    >
                       <UilLink size="14" style={{ marginRight: "4px" }} />
                       {project.textLink}
                     </ProjectLink>

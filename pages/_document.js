@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <link rel="icon" href="/img/favicon.ico" />
+          <link rel="icon" href="/img/favicon.png" />
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet"

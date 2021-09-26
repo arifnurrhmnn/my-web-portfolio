@@ -92,6 +92,7 @@ export const ItemLink = styled.a`
   font-size: 16px;
   font-family: "Kanit", serif;
   cursor: pointer;
+  pointer-events: ${(props) => (props.disabled ? "none" : "painted")};
   &:hover {
     transition: all 0.3s ease-out;
     color: #818a91;

@@ -168,7 +168,7 @@ export const DataProjects = [
     imageDisplay: "/img/batikkita.png",
     textSource: "Source Code",
     textLink: "Coming Soon",
-    linkSite: "#",
+    linkSite: "",
     linkGithub: "https://github.com/arifnurrhmnn/batikkita",
     tags: [
       "django",
