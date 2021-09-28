@@ -104,7 +104,7 @@ export default function About(props) {
                   setCourse(true), setEducation(false);
                 }}
               >
-                Course
+                Certifications
               </ButtonTab>
             </QualificationTab>
             <QualificationContent>

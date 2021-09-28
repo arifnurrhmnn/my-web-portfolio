@@ -9,6 +9,12 @@ export const ContactMe = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   min-height: 100vh;
+  @media screen and (max-width: 767px) {
+    padding-top: 2rem;
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 1rem;
+  }
 `;
 export const ContactTitle = styled.h1`
   max-width: 50%;

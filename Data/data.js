@@ -70,8 +70,8 @@ export const DataCourses = [
   {
     id: 1,
     title: "PROGATE",
-    subtitle: "React",
-    description: " Fundamental React for Front-end Web Development",
+    subtitle: "Front-End Web Developer",
+    description: "Fundamental React for Front-end Web Development",
     date: "Jun 2021",
     credential: "https://progate.com/course_certificate/0fd9590equvcje",
   },
@@ -86,19 +86,19 @@ export const DataCourses = [
   {
     id: 3,
     title: "PROGATE",
-    subtitle: "Node.js",
+    subtitle: "Web Developer",
     description: "Web Development Path (Node.js)",
     date: "Jun 2021",
     credential: "https://progate.com/path_certificate/f40a4274qutrky",
   },
   {
     id: 4,
-    title: "BPPTIK",
-    subtitle: "Junior Web Developer",
-    description: "Programming and Software Development",
+    title: "BNSP",
+    subtitle: "Programming and Software Development",
+    description: "Junior Web Developer",
     date: "Oct 2020",
     credential:
-      "https://drive.google.com/file/d/13sqY0KzoZFAvrQZfnYkfZLQsznlBQKI1/view?usp=sharing",
+      "https://drive.google.com/file/d/1ihBSQYrpesSiZO5DbmKJKihNiLj6-yLE/view?usp=sharing",
   },
   {
     id: 5,
@@ -110,6 +110,15 @@ export const DataCourses = [
   },
   {
     id: 6,
+    title: "BPPTIK",
+    subtitle: "Programming and Software Development",
+    description: "Junior Web Developer Training and Certification",
+    date: "Sep 2020",
+    credential:
+      "https://drive.google.com/file/d/1MxiDAFpAO100MtEzIiu2bBCwrhGcbLge/view?usp=sharing",
+  },
+  {
+    id: 7,
     title: "SKILL ACADEMY",
     subtitle: "Technology & Software",
     description: "Programming Foundation for Data Science",
@@ -117,7 +126,7 @@ export const DataCourses = [
     credential: "https://skillacademy.com/sertifikat/H2505ZUGT779VZ",
   },
   {
-    id: 7,
+    id: 8,
     title: "DICODING",
     subtitle: "Front-End Web Developer",
     description: "Learning The Fundamentals of Front-End Web Development",
@@ -126,7 +135,7 @@ export const DataCourses = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: "DICODING",
     subtitle: "Front-End Web Developer",
     description: "Building Progressive Web Apps",
@@ -134,7 +143,7 @@ export const DataCourses = [
     credential: "https://www.dicoding.com/certificates/OQLZ90WK2Z5D",
   },
   {
-    id: 9,
+    id: 10,
     title: "CISCO",
     subtitle: "Cisco Networking Academy",
     description: "CCNA Routing and Switching: Introduction to Networks",

@@ -2,7 +2,13 @@ import styled from "styled-components";
 import { Btn } from "../../Theme/GlobalStyle";
 
 export const AboutSec = styled.div`
-  margin-top: 4rem;
+  margin-top: 5rem;
+  @media screen and (max-width: 767px) {
+    margin-top: 2rem;
+  }
+  @media screen and (max-width: 575px) {
+    margin-top: 1rem;
+  }
 `;
 
 export const AboutTitle = styled.h1`

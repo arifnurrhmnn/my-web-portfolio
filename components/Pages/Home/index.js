@@ -56,7 +56,7 @@ export default function Home(props) {
           <InfoColumn>
             <TextWrapper>
               <TopLine>Hi, i'm Arif Nur Rohman</TopLine>
-              <Heading>Junior Frontend Web Developer</Heading>
+              <Heading>Junior Web Developer</Heading>
               <Subtitle>
                 I am a web developer and frontend web developer who focuses on
                 implementing web design into a responsive web. I'm looking

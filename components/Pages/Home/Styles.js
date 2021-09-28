@@ -5,11 +5,16 @@ export const InfoRow = styled.div`
   display: flex;
   min-height: 100vh;
   margin: 0rem -15px 0 -15px;
+  margin-top: 5rem;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
+    margin-top: 2rem;
+  }
+  @media screen and (max-width: 575px) {
+    margin-top: 1rem;
   }
 `;
 

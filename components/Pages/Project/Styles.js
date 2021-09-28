@@ -2,8 +2,14 @@ import styled from "styled-components";
 import { ProjectTitle as Title } from "../Home/Styles";
 
 export const ProjectSec = styled.div`
-  margin-top: 4rem;
+  margin-top: 5rem;
   margin-bottom: 4rem;
+  @media screen and (max-width: 767px) {
+    margin-top: 2rem;
+  }
+  @media screen and (max-width: 575px) {
+    margin-top: 1rem;
+  }
 `;
 
 export const ProjectTitle = styled.h1`
@@ -31,7 +37,7 @@ export const ProjectSubtitle = styled.p`
 `;
 
 export const ProjectRow = styled.div`
-  padding-top: 3rem;
+  padding-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
