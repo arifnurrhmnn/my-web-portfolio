@@ -56,11 +56,12 @@ export default function Home(props) {
           <InfoColumn>
             <TextWrapper>
               <TopLine>Hi, i'm Arif Nur Rohman</TopLine>
-              <Heading>Junior Web Developer</Heading>
+              <Heading>Frontend Engineer</Heading>
               <Subtitle>
-                I am a web developer and frontend web developer who focuses on
-                implementing web design into a responsive web. I'm looking
-                forward to collaborating with you.
+                I am from Indonesia and have been working as a Frontend Engineer
+                for more than 2 years. I am currently working Arkademi as a
+                Frontend Engineer since 2022. Freelancing is my side job since
+                2023. I'm looking forward to collaborating with you.
               </Subtitle>
               <SocialMedia>
                 <Link href="mailto:arifnur.rhmnn@gmail.com" passHref>

@@ -33,6 +33,23 @@ export const DataMediaSocials = [
   },
 ];
 
+export const DataWorks = [
+  {
+    id: 1,
+    name: "Arkademi",
+    fieldOfStudy: "Full Time | Frontend Engineer",
+    yearStarts: "2022",
+    yearFinised: "now",
+  },
+  {
+    id: 1,
+    name: "TMS Isuzu",
+    fieldOfStudy: "Freelance | Frontend Engineer",
+    yearStarts: "2023",
+    yearFinised: "now",
+  },
+];
+
 export const DataEducations = [
   {
     id: 1,
@@ -160,7 +177,7 @@ export const DataProjects = [
     imageDisplay: "/img/mywebportfolio.png",
     textSource: "Source Code",
     textLink: "Visit Website",
-    linkSite: "http://arifnurrohman.xyz",
+    linkSite: "http://arifnurrohman.com",
     linkGithub: "https://github.com/arifnurrhmnn/my-web-portfolio",
     tags: [
       "react.js",
@@ -195,8 +212,8 @@ export const DataProjects = [
     name: "My Furniture",
     imageDisplay: "/img/myfurniture.png",
     textSource: "Source Code",
-    textLink: "Visit Website",
-    linkSite: "http://myfurniture.arifnurrohman.xyz",
+    textLink: "Comming Soon",
+    linkSite: "",
     linkGithub: "https://github.com/arifnurrhmnn/myfurniture",
     tags: ["php", "html", "css", "javascript", "bootstrap", "mysql"],
   },
@@ -205,8 +222,8 @@ export const DataProjects = [
     name: "Klaten Kita",
     imageDisplay: "/img/klatenkita.png",
     textSource: "Source Code",
-    textLink: "Visit Website",
-    linkSite: "http://klatenkita.arifnurrohman.xyz",
+    textLink: "Comming Soon",
+    linkSite: "",
     linkGithub: "https://github.com/arifnurrhmnn/klatenkita",
     tags: ["php", "html", "css", "javascript", "bootstrap", "mysql"],
   },

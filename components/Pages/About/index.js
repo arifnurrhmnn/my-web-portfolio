@@ -2,7 +2,12 @@ import { React, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "../../Theme/GlobalStyle";
-import { DataCourses, DataEducations, DataUser } from "../../../Data/data";
+import {
+  DataWorks,
+  DataCourses,
+  DataEducations,
+  DataUser,
+} from "../../../Data/data";
 import { UilGraduationCap, UilArrowRight } from "@iconscout/react-unicons";
 import {
   AboutCol,
@@ -34,7 +39,8 @@ import {
 } from "./Styles";
 
 export default function About(props) {
-  const [education, setEducation] = useState(true);
+  const [work, setWork] = useState(true);
+  const [education, setEducation] = useState(false);
   const [course, setCourse] = useState(false);
 
   return (
@@ -72,11 +78,11 @@ export default function About(props) {
                 <br />
                 <br />
                 After graduation I decided to become a{" "}
-                <strong>Frontend Web Developer</strong>. With experience in
-                creating multiple projects as a web developer, I have acquired
-                the skills and knowledge necessary to create a good project. I
-                am very excited and enjoy every project development process, and
-                enjoy discussing and collaborating.
+                <strong>Frontend Engineer</strong>. With experience in creating
+                multiple projects as a web developer, I have acquired the skills
+                and knowledge necessary to create a good project. I am very
+                excited and enjoy every project development process, and enjoy
+                discussing and collaborating.
               </ItemDesc>
             </AboutCol>
           </AboutRow>
@@ -91,9 +97,17 @@ export default function About(props) {
           <QualificationList>
             <QualificationTab>
               <ButtonTab
+                education={work ? work : ""}
+                onClick={() => {
+                  setWork(true), setEducation(false), setCourse(false);
+                }}
+              >
+                Work
+              </ButtonTab>
+              <ButtonTab
                 education={education ? education : ""}
                 onClick={() => {
-                  setEducation(true), setCourse(false);
+                  setWork(false), setEducation(true), setCourse(false);
                 }}
               >
                 Education
@@ -101,13 +115,25 @@ export default function About(props) {
               <ButtonTab
                 education={course ? course : ""}
                 onClick={() => {
-                  setCourse(true), setEducation(false);
+                  setWork(false), setCourse(true), setEducation(false);
                 }}
               >
                 Certifications
               </ButtonTab>
             </QualificationTab>
             <QualificationContent>
+              <Education education={work}>
+                {DataWorks.map((work, index) => (
+                  <EducationCard key={index}>
+                    <UilGraduationCap size="50" color="#079211" />
+                    <EducationTitle>{work.name}</EducationTitle>
+                    <EducationSubtitle>{work.fieldOfStudy}</EducationSubtitle>
+                    <EducationDate>
+                      {work.yearStarts} - {work.yearFinised}
+                    </EducationDate>
+                  </EducationCard>
+                ))}
+              </Education>
               <Education education={education}>
                 {DataEducations.map((education, index) => (
                   <EducationCard key={index}>
