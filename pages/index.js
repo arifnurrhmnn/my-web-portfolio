@@ -1,3 +1,4 @@
+"use client";
 import Home from "../components/Pages/Home";
 import Layout from "../components/Layout/Layout";
 
